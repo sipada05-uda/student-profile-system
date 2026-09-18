@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile | Alladhin Sipada</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER / NAVIGATION
+     ========================= -->
+
+<header>
+    <div class="header-inner">
+
+        <h2>🎓 Student Profile</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
+
+            <button id="darkModeBtn" type="button">
+                🌙 Dark Mode
+            </button>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- =========================
+     HOME
+     ========================= -->
+
+<section id="home" class="section home">
+
+    <div class="profile-card">
+
+        <img
+            src="{{ url_for('static', filename='images/profile.jpg') }}"
+            alt="Profile Picture"
+        >
+
+        <div class="home-text">
+
+            <h1>Alladhin P. Sipada</h1>
+
+            <h3>BS Information Technology Student</h3>
+
+            <p>
+                "Life has no shortcuts, follow what Gods' plan for you."
+            </p>
+
+            <a href="#about" class="btn">
+                About Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT ME
+     ========================= -->
+
+<section id="about" class="section">
+
+    <h1 class="page-title">
+        👤 About Me
+    </h1>
+
+    <div class="content-box">
+
+        <div class="about-layout">
+
+            <div class="about-image">
+
+                <img
+                    src="{{ url_for('static', filename='images/profile.jpg') }}"
+                    alt="Profile Picture"
+                >
+
+            </div>
+
+
+            <div class="about-content">
+
+                <table class="info-table">
+
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Alladhin P. Sipada</td>
+                    </tr>
+
+                    <tr>
+                        <td>Age</td>
+                        <td>19 Years Old</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td>P-4 San Fernando, Bislig City</td>
+                    </tr>
+
+                    <tr>
+                        <td>Course & Year</td>
+                        <td>
+                            BS Information Technology - 1st Year
+                        </td>
+                    </tr>
+
+                </table>
+
+
+                <h2>Short Biography</h2>
+
+                <p>
+                    I am a passionate Information Technology student
+                    who loves programming, designing websites, and
+                    learning new technologies. I enjoy creating systems
+                    that can help people and improve daily tasks.
+                </p>
+
+
+                <h2>Career Goals</h2>
+
+                <p>
+                    My goal is to become a successful Software Engineer
+                    or Web Developer, improve my technical skills,
+                    and create systems that can help people.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+     ========================= -->
+
+<section id="education" class="section">
+
+    <h1 class="page-title">
+        🎓 Educational Background
+    </h1>
+
+
+    <div class="cards-grid">
+
+
+        <div class="content-box education-card">
+
+            <h2>🏫 Elementary</h2>
+
+            <p>
+                <strong>School:</strong>
+                Mangagoy South Elementary School
+            </p>
+
+        </div>
+
+
+        <div class="content-box education-card">
+
+            <h2>📘 High School</h2>
+
+            <p>
+                <strong>School:</strong>
+                Saint Vincent de Paul Diocesan College
+            </p>
+
+        </div>
+
+
+        <div class="content-box education-card">
+
+            <h2>🎓 Senior High School</h2>
+
+            <p>
+                <strong>School:</strong>
+                Saint Vincent de Paul Diocesan College
+            </p>
+
+            <p>
+                <strong>Strand:</strong>
+                Humanities and Social Sciences
+            </p>
+
+        </div>
+
+
+        <div class="content-box education-card">
+
+            <h2>💻 College</h2>
+
+            <p>
+                <strong>School:</strong>
+                De La Salle John Bosco College
+            </p>
+
+            <p>
+                <strong>Course:</strong>
+                BS Information Technology
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+     ========================= -->
+
+<section id="skills" class="section">
+
+    <h1 class="page-title">
+        💻 My Skills
+    </h1>
+
+
+    <div class="cards-grid">
+
+
+        <div class="content-box skills-card">
+
+            <h2>💻 Technical Skills</h2>
+
+            <ul>
+                <li>Computer Troubleshooting</li>
+                <li>Web Development</li>
+                <li>Database Management</li>
+                <li>Networking Basics</li>
+            </ul>
+
+        </div>
+
+
+        <div class="content-box skills-card">
+
+            <h2>⌨️ Programming Languages</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+            </ul>
+
+        </div>
+
+
+        <div class="content-box skills-card">
+
+            <h2>🖥️ Software Applications</h2>
+
+            <ul>
+                <li>Microsoft Word</li>
+                <li>Microsoft Excel</li>
+                <li>Microsoft PowerPoint</li>
+                <li>Visual Studio Code</li>
+                <li>XAMPP</li>
+            </ul>
+
+        </div>
+
+
+        <div class="content-box skills-card">
+
+            <h2>🤝 Soft Skills</h2>
+
+            <ul>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Time Management</li>
+                <li>Adaptability</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+     ========================= -->
+
+<section id="projects" class="section">
+
+    <h1 class="page-title">
+        💻 My Projects
+    </h1>
+
+
+    <div class="content-box project-box">
+
+        <img
+            src="{{ url_for('static', filename='images/project.jpg') }}"
+            alt="Project Screenshot"
+            class="project-image"
+        >
+
+
+        <table class="project-table">
+
+            <tr>
+                <td>Project Title</td>
+                <td>Student Profile System</td>
+            </tr>
+
+            <tr>
+                <td>Description</td>
+                <td>
+                    A simple web-based student profile that displays
+                    personal information, education, skills, projects,
+                    gallery, achievements, and contact details.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Technology Used</td>
+                <td>
+                    HTML, CSS, JavaScript, Python, Flask
+                </td>
+            </tr>
+
+            <tr>
+                <td>Project Status</td>
+                <td>
+                    In Development 🚀
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+     ========================= -->
+
+<section id="gallery" class="section">
+
+    <h1 class="page-title">
+        📸 My Gallery
+    </h1>
+
+
+    <div class="gallery-grid">
+
+
+        <div class="content-box gallery-card">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery1.jpg') }}"
+                alt="Personal Photo"
+            >
+
+            <div class="gallery-card-content">
+
+                <h3>Personal Photo</h3>
+
+                <p>
+                    This is my personal photo.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-box gallery-card">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery2.jpg') }}"
+                alt="School Activities"
+            >
+
+            <div class="gallery-card-content">
+
+                <h3>School Activities</h3>
+
+                <p>
+                    Photos taken during school events
+                    and academic activities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-box gallery-card">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery3.jpg') }}"
+                alt="Organizational Activities"
+            >
+
+            <div class="gallery-card-content">
+
+                <h3>Organizational Activities</h3>
+
+                <p>
+                    Participation in student organizations
+                    and activities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-box gallery-card">
+
+            <img
+                src="{{ url_for('static', filename='images/gallery4.jpg') }}"
+                alt="Community Involvement"
+            >
+
+            <div class="gallery-card-content">
+
+                <h3>Community Involvement</h3>
+
+                <p>
+                    Community outreach and volunteer activities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     AWARDS
+     ========================= -->
+
+<section id="awards" class="section">
+
+    <h1 class="page-title">
+        🏆 Awards & Achievements
+    </h1>
+
+
+    <div class="cards-grid">
+
+
+        <div class="content-box awards-section">
+
+            <h2>🎓 Trainings Attended</h2>
+
+            <ul>
+                <li>Basic Computer Literacy Training</li>
+                <li>DRRMC Training</li>
+                <li>Scout Service Training</li>
+            </ul>
+
+        </div>
+
+
+        <div class="content-box awards-section">
+
+            <h2>📚 Seminars and Workshops</h2>
+
+            <ul>
+                <li>Programming Seminar</li>
+            </ul>
+
+        </div>
+
+
+        <div class="content-box awards-section">
+
+            <h2>📜 Certificates Earned</h2>
+
+            <ul>
+                <li>Certificate of Participation</li>
+                <li>Scout Service Certificate</li>
+                <li>NDRRMC Certificate</li>
+            </ul>
+
+        </div>
+
+
+        <div class="content-box awards-section">
+
+            <h2>🥇 Academic Awards</h2>
+
+            <ul>
+                <li>1st Semester Honorable Mention</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+     ========================= -->
+
+<section id="contact" class="section">
+
+    <h1 class="page-title">
+        📞 Contact Me
+    </h1>
+
+
+    <div class="content-box contact-box">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <h2>Contact Information</h2>
+
+            <p>
+                <strong>Email:</strong>
+                sipada05@gmail.com
+            </p>
+
+            <p>
+                <strong>Mobile Number:</strong>
+                09098926814
+            </p>
+
+            <p>
+                <strong>Facebook:</strong>
+
+                <a
+                    href="https://www.facebook.com/alladhin.sipada.5"
+                    target="_blank"
+                >
+                    Visit my Facebook
+                </a>
+
+            </p>
+
+        </div>
+
+
+        <!-- FLASK MESSAGE -->
+
+        {% if message %}
+
+        <div class="success-message">
+            {{ message }}
+        </div>
+
+        {% endif %}
+
+
+        <!-- SEND MESSAGE -->
+
+        <h2 class="message-title">
+            Send Me a Message
+        </h2>
+
+
+        <form
+            action="/"
+            method="POST"
+            class="contact-form"
+        >
+
+            <label for="name">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Type your message here"
+                required
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer class="footer">
+
+    <p>
+        &copy; 2026 Alladhin P. Sipada.
+        All Rights Reserved.
+    </p>
+
+
+    <div class="social-links">
+
+        <a
+            href="https://www.facebook.com/share/1bgW2iqJ6D/"
+            target="_blank"
+        >
+            Facebook
+        </a>
+
+        |
+
+        <a
+            href="https://www.instagram.com/dhinazure"
+            target="_blank"
+        >
+            Instagram
+        </a>
+
+        |
+
+        <a
+            href="https://github.com/"
+            target="_blank"
+        >
+            GitHub
+        </a>
+
+    </div>
+
+
+    <p>
+        Last Updated: September 18, 2026
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     DARK MODE SCRIPT
+     ========================= -->
+
+<script>
+
+const darkModeBtn =
+    document.getElementById("darkModeBtn");
+
+
+darkModeBtn.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode");
+
+
+    if (
+        document.body.classList.contains("dark-mode")
+    ) {
+
+        darkModeBtn.textContent =
+            "☀️ Light Mode";
+
+    } else {
+
+        darkModeBtn.textContent =
+            "🌙 Dark Mode";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
